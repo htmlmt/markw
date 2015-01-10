@@ -47,3 +47,11 @@ end
 gem 'jquery-turbolinks'
 
 gem 'devise'
+
+gem 'dotenv-rails', :groups => [:development, :test]
+
+gem 'phrasing'
+
+gem 'bootsy'
+
+gem 'tinymce-rails'

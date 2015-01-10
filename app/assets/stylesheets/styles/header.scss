@@ -1,0 +1,122 @@
+.body--header {
+  background: url('../assets/watch-me-go-header.jpg');
+  background-size: 101%;
+  background-position: center top;
+  @include clearfix();
+  padding: 4.5% 11.5% 33.5% 4.5%;
+  height: 0;
+}
+
+.header--title {
+  vertical-align: middle;
+  display: inline-block;
+  width: 86%;
+  font-family: 'Oswald Bold';
+  color: #dcffff;
+  font-size: calc(58rem/16);
+  margin: 0;
+}
+
+.header--social {
+  width: 13.5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header--social ul {
+	@include flexbox();
+	@include flexbox-justify-content(space-between);
+	@include flexbox-align-items(flex-start);
+	@include flexbox-flex-wrap(wrap);
+  margin: 0;
+  padding: 0;
+}
+
+.header--social li {
+  display: inline-block;
+  width: calc(100%/3 - .5em);
+}
+
+.header--top {
+  margin-bottom: 23%;
+}
+
+.header--novel {
+  float: right;
+  @include transform-rotate(-3)
+}
+
+.header--novel a, .header--novel a em {
+  font-family: 'Oswald Light';
+  color: white;
+  font-size: calc(23rem/16);
+  text-decoration: none;
+}
+
+nav {
+  height: 0;
+  padding-bottom: 5%;
+  margin-top: -3%;
+  z-index: 10;
+  position: relative;
+  background: white;
+  width: 120%;
+  margin-left: -5%;
+  padding-left: 7%;
+  padding-top: 1%;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+}
+
+nav li {
+  display: inline-block;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: calc(25rem/16);
+  letter-spacing: .1em;
+  word-spacing: .35em;
+  cursor: default;
+}
+
+nav li a, nav li a:visited {
+  color: $siteDarkBlue;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.current {
+  font-weight: bold;
+}
+
+nav ul {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+nav li span {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  margin: 0 .5em 0 .8em;
+  color: $siteDarkBlue;
+}
+
+nav li a:hover {
+  color: $siteRed;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  max-width: 1000px;
+}

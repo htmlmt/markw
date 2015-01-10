@@ -1,0 +1,29 @@
+<h1>Listing praises</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Book</th>
+      <th>Quotation</th>
+      <th>Source</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @praises.each do |praise| %>
+      <tr>
+        <td><%= praise.book_id %></td>
+        <td><%= praise.quotation %></td>
+        <td><%= praise.source %></td>
+        <td><%= link_to 'Show', praise %></td>
+        <td><%= link_to 'Edit', edit_praise_path(praise) %></td>
+        <td><%= link_to 'Destroy', praise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Praise', new_praise_path %>

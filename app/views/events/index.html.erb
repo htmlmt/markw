@@ -1,0 +1,60 @@
+<main class="body--main">
+    <section class="upcoming-events">
+        <header class="events--header">
+            <h2>upcoming events</h2>
+        </header>
+
+<% @upcoming_events.each do |event| %>
+  <div class="events-column">
+      <section class="column--text">
+          <a href="http://www.mcnallyjackson.com/event/mark-wisniewski-and-heidi-pitlor">
+              <div class="event">
+                  <hr>
+                  <%= event.date.strftime("%B %d, %Y, %l %P") %>
+                  <hr>
+                  <h2>
+                    <%= event.title %>
+                  </h2>
+                  <% if event.description %>
+                  <em><%= event.description %></em>
+                  <% end %>
+                  at <%= event.place %><br/>
+                  <%= event.city %>
+              </div>
+          </a>
+      </section>
+  </div>
+<% end %>
+  </section>
+    <section class="previous-events">
+        <header class="events--header">
+            <h2>previous events</h2>
+        </header>
+        <div class="past-events-container">
+            <% @previous_events.each do |event| %>
+            <div class="events-column-third">
+                <section class="event-container">
+                    <a href="http://cwp.fas.nyu.edu/object/writersinnewyork.html" target="_blank">
+                        <div class="event">
+                            <hr>
+                            <%= event.date.strftime("%B %d, %Y, %l %P") %>
+                            <hr>
+                            <h2>
+                              <%= event.title %>
+                            </h2>
+                            <% if event.description %>
+                            <em><%= event.description %></em><br/>
+                            <% end %>
+                            at <%= event.place %><br/>
+                            <%= event.city %>
+                        </div>
+                    </a>
+                </section>
+            </div>
+            <% end %>
+        </div>
+    </section>
+</main>
+
+        <div class="diagonal">
+        </div>

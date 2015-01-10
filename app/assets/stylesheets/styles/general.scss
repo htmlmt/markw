@@ -1,0 +1,92 @@
+.wrapper {
+	max-width: 1000px;
+	@include center-block();
+	overflow: hidden;
+  position: relative;
+}
+
+.column--text a, .column--text--wide a {
+  text-decoration: underline;
+}
+
+.column--text a:hover, .column--text--wide a:hover {
+  color: $siteRed;
+}
+
+.mce-btn button:hover {
+  border: none;
+}
+
+.logged-in {
+  margin-bottom: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2% 4%;
+  background: $siteDarkBlue;
+}
+
+.admin-links {
+  padding: 1% 4%;
+  background: $siteDarkestBlue;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.body-padding {
+  background: $siteDarkBlue;
+  padding: 10.5% 5%;
+  margin-top: -3%;
+}
+
+button, .button, input[type="button"], input[type="submit"], input[type="reset"] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0.5em 1.5em;
+  background-color: $siteDarkestBlue;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 3% 0;
+}
+
+input[type="submit"]:hover {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0.5em 1.5em;
+  background-color: $siteDarkestBlue;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 3% 0;
+}
+
+input[type="text"], input[type="date"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="url"], input[type="email"], input[type="number"], input[type="search"], input[type="file"], input[type="password"], select, textarea, .textbox {
+  display: block;
+  width: 60%;
+  padding: 0.375em 1.5em;
+  margin-bottom: 1em;
+  background-color: white;
+  border: 1px solid $siteDarkestBlue;
+  color: $siteDarkBlue;
+  font-size: .875em;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: "Quattrocento Sans", sans-serif;
+}
