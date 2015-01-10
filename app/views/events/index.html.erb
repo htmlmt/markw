@@ -7,9 +7,6 @@
 <% @upcoming_events.each do |event| %>
   <div class="events-column">
       <section class="column--text">
-          <% if current_user %>
-          <%= link_to 'edit this event', edit_event_path(event) %>
-          <% end %>
           <a href="<%= event.link %>" target="_blank">
               <div class="event">
                   <hr>
@@ -25,6 +22,9 @@
                   <%= event.city %>
               </div>
           </a>
+          <% if current_user %>
+          <%= link_to 'edit this event', edit_event_path(event) %>
+          <% end %>
       </section>
   </div>
 <% end %>
@@ -36,9 +36,6 @@
         <div class="past-events-container">
             <% @previous_events.each do |event| %>
             <div class="events-column-third">
-                <% if current_user %>
-                <%= link_to 'edit this event', edit_event_path(event) %>
-                <% end %>
                 <section class="event-container">
                     <a href="<%= event.link %>" target="_blank">
                         <div class="event">
@@ -55,6 +52,9 @@
                             <%= event.city %>
                         </div>
                     </a>
+                    <% if current_user %>
+                    <%= link_to 'edit this event', edit_event_path(event) %>
+                    <% end %>
                 </section>
             </div>
             <% end %>
