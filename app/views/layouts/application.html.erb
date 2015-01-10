@@ -112,12 +112,32 @@
     
           <nav>
               <ul>
+                  <% if current_page?('/') %>
                   <li><a class="current" href="/">HOME</a><span>|</span></li>
+                  <% else %>
+                  <li><a href="/">HOME</a><span>|</span></li>
+                  <% end %>
+                  <% if current_page?('/books') %>
+                  <li><a class="current" href="/books">BOOKS</a><span>|</span></li>
+                  <% else %>
                   <li><a href="/books">BOOKS</a><span>|</span></li>
+                  <% end %>
+                  <% if current_page?('/events') %>
+                  <li><a class="current" href="/events">EVENTS</a><span>|</span></li>
+                  <% else %>
                   <li><a href="/events">EVENTS</a><span>|</span></li>
+                  <% end %>
+                  <% if current_page?('/bio') %>
+                  <li><a class="current" href="/bio">BIO</a><span>|</span></li>
+                  <% else %>
                   <li><a href="/bio">BIO</a><span>|</span></li>
+                  <% end %>
                   <li id="contact"><a>CONTACT</a><span>|</span></li>
+                  <% if current_page?('/interviews') %>
+                  <li><a class="current" href="/interviews">INTERVIEWS</a></li>
+                  <% else %>
                   <li><a href="/interviews">INTERVIEWS</a></li>
+                  <% end %>
               </ul>
           </nav>
       </section>
