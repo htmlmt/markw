@@ -41,6 +41,8 @@
   
 </head>
 <body id="skrollr-body">
+    <div class="darken">
+    </div>
     <% if user_signed_in? %>
         <div class="logged-in">
             Logged in as <strong><%= current_user.email %></strong>.
@@ -52,8 +54,6 @@
             <%= link_to('New Book', new_book_path) %>
         </div>
     <% end %>
-    <div class="darken">
-    </div>
     <div class="contact">
         <div id="x--icon">
             <img src="/assets/x-icon_2x.png" alt="close"/>

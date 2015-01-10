@@ -29,7 +29,7 @@ class InterviewsController < ApplicationController
 
     respond_to do |format|
       if @interview.save
-        format.html { redirect_to @interview, notice: 'Interview was successfully created.' }
+        format.html { redirect_to interviews_path, notice: 'Interview was successfully created.' }
         format.json { render :show, status: :created, location: @interview }
       else
         format.html { render :new }
