@@ -4,7 +4,9 @@
           <div class="column">
               <header class="column--header">
                   <h2><em><%= book.title %></em></h2>
+                  <% if current_user %>
                   <%= link_to 'edit this book', edit_book_path(book) %>
+                  <% end %>
               </header>
               <section class="column--text">
                   <div class="book--summary">
