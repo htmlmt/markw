@@ -7,7 +7,7 @@
 <% @upcoming_events.each do |event| %>
   <div class="events-column">
       <section class="column--text">
-          <a href="<%= event.link %> target='_blank'">
+          <a href="<%= event.link %>" target="_blank">
               <div class="event">
                   <hr>
                   <%= event.date.strftime("%B %d, %Y, %l %P") %>
@@ -34,7 +34,7 @@
             <% @previous_events.each do |event| %>
             <div class="events-column-third">
                 <section class="event-container">
-                    <a href="<%= event.link %> target='_blank'">
+                    <a href="<%= event.link %>" target="_blank">
                         <div class="event">
                             <hr>
                             <%= event.date.strftime("%B %d, %Y, %l %P") %>
