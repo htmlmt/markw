@@ -1,5 +1,5 @@
 .body--header {
-  background: url('../assets/watch-me-go-header.jpg');
+  background: image-url("watch-me-go-header.jpg");
   background-size: 101%;
   background-position: center top;
   @include clearfix();
