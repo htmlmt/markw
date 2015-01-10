@@ -5,7 +5,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    events = Event.all
+    events = Event.order('date DESC')
     @upcoming_events = []
     @previous_events = []
     events.each do |event|
