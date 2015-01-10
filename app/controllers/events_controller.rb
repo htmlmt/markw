@@ -5,16 +5,8 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    events = Event.order('date DESC')
-    @upcoming_events = []
-    @previous_events = []
-    events.each do |event|
-      if event.date > Time.now
-        @upcoming_events << event
-      else
-        @previous_events << event
-      end
-    end
+    @upcoming_events = Event.where('date >= ?', Time.now).order('date ASC')
+    @previous_events = Event.where('date <= ?', Time.now).order('date DESC')
   end
 
   # GET /events/1
