@@ -5,7 +5,7 @@ class InterviewsController < ApplicationController
   # GET /interviews
   # GET /interviews.json
   def index
-    @interviews = Interview.all
+    @interviews = Interview.order('created_at DESC')
   end
 
   # GET /interviews/1
