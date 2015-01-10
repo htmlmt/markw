@@ -55,3 +55,5 @@ gem 'phrasing'
 gem 'bootsy'
 
 gem 'tinymce-rails'
+
+gem 'simple_form'
