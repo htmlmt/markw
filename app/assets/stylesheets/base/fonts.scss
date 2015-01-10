@@ -1,28 +1,28 @@
 @font-face {
 	font-family: 'Oswald Bold';
-	src: url('/assets/oswald-bold-webfont.eot');
-	src: url('/assets/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
-	url('/assets/oswald-bold-webfont.woff') format('woff'),
-	url('/assets/oswald-bold-webfont.ttf') format('truetype'),
-	url('/assets/oswald-bold-webfont.svg#oswald-bold') format('svg');
+	src: font_url('oswald-bold-webfont.eot');
+	src: font_url('oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	font_url('oswald-bold-webfont.woff') format('woff'),
+	font_url('oswald-bold-webfont.ttf') format('truetype'),
+	font_url('oswald-bold-webfont.svg#oswald-bold') format('svg');
 }
 
 @font-face {
 	font-family: 'Oswald Regular';
-	src: url('/assets/oswald-regular-webfont.eot');
-	src: url('/assets/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
-	url('/assets/oswald-regular-webfont.woff') format('woff'),
-	url('/assets/oswald-regular-webfont.ttf') format('truetype'),
-	url('/assets/oswald-regular-webfont.svg#oswald-regular') format('svg');
+	src: font_url('oswald-regular-webfont.eot');
+	src: font_url('oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	font_url('oswald-regular-webfont.woff') format('woff'),
+	font_url('oswald-regular-webfont.ttf') format('truetype'),
+	font_url('oswald-regular-webfont.svg#oswald-regular') format('svg');
 }
 
 @font-face {
 	font-family: 'Oswald Light';
-	src: url('/assets/oswald-light-webfont.eot');
-	src: url('/assets/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
-	url('/assets/oswald-light-webfont.woff') format('woff'),
-	url('/assets/oswald-light-webfont.ttf') format('truetype'),
-	url('/assets/oswald-light-webfont.svg#oswald-light') format('svg');
+	src: font_url('oswald-light-webfont.eot');
+	src: font_url('oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+	font_url('oswald-light-webfont.woff') format('woff'),
+	font_url('oswald-light-webfont.ttf') format('truetype'),
+	font_url('oswald-light-webfont.svg#oswald-light') format('svg');
 }
 
 //@font-face {
