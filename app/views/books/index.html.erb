@@ -18,9 +18,11 @@
                             </div>
                           </a>
                       </div>
+                      <% if book.summary.present? %>
                       <div class="summary">
                           <%= simple_format(book.summary) %>
                       </div>
+                      <% end %>
                   </div>
               </section>
           </div>
