@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
   devise_for :users, :skip => [:sessions]
    as :user do
      get 'admin' => 'devise/sessions#new', :as => :new_user_session
@@ -7,6 +6,8 @@ Rails.application.routes.draw do
      get 'logout' => 'devise/sessions#destroy'
      delete 'logout' => 'devise/sessions#destroy', :as => :destroy_user_session
    end
+  
+  get '/bio' => 'bio#show', :as => :bio
   
   resources :interviews
 
