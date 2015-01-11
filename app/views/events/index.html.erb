@@ -16,7 +16,7 @@
                     <%= event.title %>
                   </h2>
                   at <%= event.place %><br/>
-                  <% if event.description %>
+                  <% if event.description.present? %>
                   <em><%= event.description %></em><br/>
                   <% end %>
                   <%= event.city %>
@@ -46,7 +46,7 @@
                               <%= event.title %>
                             </h2>
                             at <%= event.place %><br/>
-                            <% if event.description %>
+                            <% if event.description.present? %>
                             <em><%= event.description %></em><br/>
                             <% end %>
                             <%= event.city %>

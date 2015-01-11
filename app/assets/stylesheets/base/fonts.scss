@@ -25,6 +25,16 @@
 	font_url('oswald-light-webfont.svg#oswald-light') format('svg');
 }
 
+@font-face {
+	font-family: 'Oswald Light';
+	src: font_url('oswald-light-webfont.eot');
+	src: font_url('oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+	font_url('oswald-light-webfont.woff') format('woff'),
+	font_url('oswald-light-webfont.ttf') format('truetype'),
+	font_url('oswald-light-webfont.svg#oswald-light') format('svg');
+  font-style: italic, oblique;
+}
+
 //@font-face {
 //  font-family: 'Quattrocento Sans';
 //  src: url('../fonts/quattrocentosans-regular-webfont.eot');

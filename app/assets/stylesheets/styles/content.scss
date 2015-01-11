@@ -391,7 +391,12 @@ hr {
   padding: 0;
 }
 
-.column--text span em, .column--header h2 em {
+.column--header h2 em {
+  font-family: 'Oswald Light';
+  font-style: italic;
+}
+
+.column--text span em { 
   font-weight: bold;
 }
 
