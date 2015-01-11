@@ -31,10 +31,10 @@
           <div class="column">
               <div class="books--top column--text">
                 <h2>PRAISE</h2>
-                <% book.praises.each do |praise| %>
-                
-                <p><%= simple_format(praise.quotation) %><br/>
-                <span>– <%= simple_format(praise.source) %></span></p>
+                <% @praises = book.praises.order('created_at DESC')%>
+                <% @praises.each do |praise| %>
+                <p><%= praise.quotation.html_safe %><br/>
+                <span>–<%= praise.source.html_safe %></span></p>
                 <% end %>
               </div>
           </div>

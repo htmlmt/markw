@@ -23,7 +23,7 @@
   <div class="field">
     <%= f.label :summary %><br>
     <%= f.text_area :summary, :class => "tinymce", :rows => 10, :cols => 30 %>
-    <%= tinymce %>
+    <%= tinymce :forced_root_block => '' %>
   </div>
   <div class="field">
     <%= f.label :link %><br>
