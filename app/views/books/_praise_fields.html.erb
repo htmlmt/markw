@@ -3,9 +3,9 @@
   <hr/>
   <br/>
   <%= f.label :quotation %><br />
-  <%= f.text_area :quotation %><br />
+  <%= f.text_area :quotation, :class => "tinymce", :rows => 5, :cols => 30 %><br />
   <%= f.label :source %><br />
-  <%= f.text_area :source %><br />
+  <%= f.text_area :source, :class => "tinymce", :rows => 10, :cols => 30 %><br />
   <%= f.check_box :_destroy %>
   <%= f.label :_destroy, "Remove praise?", class: 'remove' %>
   <br/>

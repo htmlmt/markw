@@ -33,8 +33,8 @@
                 <h2>PRAISE</h2>
                 <% book.praises.each do |praise| %>
                 
-                <p><%= praise.quotation %><br/>
-                <span>– <%= praise.source %></span></p>
+                <p><%= simple_format(praise.quotation) %><br/>
+                <span>– <%= simple_format(praise.source) %></span></p>
                 <% end %>
               </div>
           </div>
