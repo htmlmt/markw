@@ -110,31 +110,55 @@
                 </section>
             </header>
     
-          <nav>
+          <div id="mobile-menu">
+              <% if current_page?('/') %>
+              <div id="mobile-current">HOME</div>
+              <% end %>
+              <% if current_page?('/books') %>
+              <div id="mobile-current">BOOKS</div>
+              <% end %>
+              <% if current_page?('/events') %>
+              <div id="mobile-current">EVENTS</div>
+              <% end %>
+              <% if current_page?('/bio') %>
+              <div id="mobile-current">BIO</div>
+              <% end %>
+              <% if current_page?('/contact') %>
+              <div id="mobile-current">CONTACT</div>
+              <% end %>
+              <% if current_page?('/interviews') %>
+              <div id="mobile-current">INTERVIEWS</div>
+              <% end %>
+              <div id="mobile-button">
+                  <%= image_tag("menu.png", :alt => "Menu") %>
+              </div>
+          </div>
+    
+          <nav class="mobile-nav">
               <ul>
                   <% if current_page?('/') %>
-                  <li><a class="current" href="/">HOME</a><span>|</span></li>
+                  <li class="mobile-hidden"><a class="current" href="/">HOME</a><span>|</span></li>
                   <% else %>
                   <li><a href="/">HOME</a><span>|</span></li>
                   <% end %>
                   <% if current_page?('/books') %>
-                  <li><a class="current" href="/books">BOOKS</a><span>|</span></li>
+                  <li class="mobile-hidden"><a class="current" href="/books">BOOKS</a><span>|</span></li>
                   <% else %>
                   <li><a href="/books">BOOKS</a><span>|</span></li>
                   <% end %>
                   <% if current_page?('/events') %>
-                  <li><a class="current" href="/events">EVENTS</a><span>|</span></li>
+                  <li class="mobile-hidden"><a class="current" href="/events">EVENTS</a><span>|</span></li>
                   <% else %>
                   <li><a href="/events">EVENTS</a><span>|</span></li>
                   <% end %>
                   <% if current_page?('/bio') %>
-                  <li><a class="current" href="/bio">BIO</a><span>|</span></li>
+                  <li class="mobile-hidden"><a class="current" href="/bio">BIO</a><span>|</span></li>
                   <% else %>
                   <li><a href="/bio">BIO</a><span>|</span></li>
                   <% end %>
                   <li id="contact"><a>CONTACT</a><span>|</span></li>
                   <% if current_page?('/interviews') %>
-                  <li><a class="current" href="/interviews">INTERVIEWS</a></li>
+                  <li class="mobile-hidden"><a class="current" href="/interviews">INTERVIEWS</a></li>
                   <% else %>
                   <li><a href="/interviews">INTERVIEWS</a></li>
                   <% end %>

@@ -72,6 +72,25 @@ function getById(id) {
 }
 
 $(document).ready(function(){
+  getById('mobile-button').listen('click', toggleMenu);
+  
+  var mobileNav = document.getElementsByClassName('mobile-nav')[0];
+  var mobileMenu = document.getElementById('mobile-menu');
+  var currentPage = $('#mobile-current').text();
+  console.log(currentPage)
+  
+  function toggleMenu() {
+    if (mobileNav.style.display == 'none') {
+      mobileNav.style.display = 'block';
+      mobileMenu.style.paddingBottom = '7%';
+      $('#mobile-current').text('CLOSE MENU');
+    } else {
+      mobileNav.style.display = 'none';
+      mobileMenu.style.paddingBottom = '10%';
+      $('#mobile-current').text(currentPage);
+    }
+  }
+  
   getById('contact').listen('click', showContact);
 
   function showContact() {

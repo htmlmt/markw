@@ -1,20 +1,113 @@
+@media only screen and (max-width: $smallTabletBreakpoint) {
+  .column--text--wide {
+    
+  }
+  
+  .column--header {
+    padding: 3.5%;
+    text-align: center;
+  }
+  
+  .column--header h2 {
+    margin-bottom: 0;
+    font-size: calc(36rem/16);
+  }
+  
+  .column p {
+    font-size: calc(28rem/16);
+  }
+  
+  .column p span {
+    font-size: calc(22rem/16);
+  }
+  
+  .column--text a {
+    font-size: calc(22rem/16);
+  }
+  
+  .diagonal {
+    display: none;
+  }
+  
+  .body--main, .body--main--show {
+    padding-bottom: 2em;
+  }
+  
+  .book {
+    padding: 0 10%;
+  }
+  
+  .events--header {
+    padding: 3.5%;
+    text-align: center;
+  }
+  
+  .events-column {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: $smallTabletBreakpoint) {
+  .events--header {
+    padding: 1.9% 3.5% 1.9% 5.5%;
+    width: 50%;
+  }
+  
+  .upcoming-events {
+    padding-top: 7.5%;
+  }
+  
+  .book {
+    padding: 0 20.5% 0 10.5%;
+  }
+  
+  .column--text--wide {
+    width: 180%;
+  }
+  
+  .column--header {
+    padding: 3.5% 3.5% 3.5% 10.5%;
+  }
+  
+  .column {
+    padding-top: 7.5%;
+  }
+  
+  .column--header h2, .column--text h2 {
+    margin-bottom: 2%;
+    font-size: calc(32rem/16);
+  }
+  
+  .column p {
+    font-size: calc(18rem/16);
+  }
+  
+  .column p span {
+    font-size: calc(15rem/16);
+  }
+  
+  .body--main, .body--main--show {
+    padding-bottom: 7em;
+  }
+  
+  .events-column {
+    width: 50%;
+  }
+}
+
 .body--main, .body--main--show {
   background: $siteDarkBlue;
   margin-top: -3%;
   padding-top: 2em;
-  padding-bottom: 7em;
   @include clearfix();
   position: relative;
 }
 
 .column {
-  width: 50%;
   float: left;
-  padding-top: 7.5%;
 }
 
 .column--text--wide {
-  width: 180%;
   float: left;
   padding: 0 10.5%;
 }
@@ -28,9 +121,7 @@
 }
 
 .events--header {
-  padding: 1.9% 3.5% 1.9% 5.5%;
   background: #2b3b3d;
-  width: 50%;
 }
 
 .events--header h2 {
@@ -42,11 +133,9 @@
 
 .upcoming-events {
   @include clearfix();
-  padding-top: 7.5%;
 }
 
 .events-column {
-  width: 50%;
   float: left;
 }
 
@@ -98,9 +187,7 @@ hr {
   font-family: 'Oswald Light';
   color: $siteLightBlue;
   margin: 0;
-  font-size: calc(32rem/16);
-  line-height: 1.35em;
-  margin-bottom: 2%;
+  line-height: 1.35em
 }
 
 .interview {
@@ -153,13 +240,11 @@ hr {
 }
 
 .column p {
-  font-size: calc(18rem/16);
   margin: 5% 0;
 }
 
 .column p span {
   font-weight: bold;
-  font-size: calc(15rem/16);
 }
 
 .column--text {
@@ -205,12 +290,7 @@ hr {
   font-weight: bold;
 }
 
-.book {
-  padding: 0 20.5% 0 10.5%;
-}
-
 .column--header {
-  padding: 3.5% 3.5% 3.5% 10.5%;
   background: $siteDarkestBlue;
 }
 
