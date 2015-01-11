@@ -3,12 +3,19 @@
   <hr/>
   <br/>
   <%= f.label :quotation %><br />
-  <%= f.text_area :quotation, :class => "tinymce", :rows => 5, :cols => 30 %><br />
+  <%= f.text_area :quotation, :class => "tinymce", :rows => 10, :cols => 30 %><br />
+  <%= tinymce :forced_root_block => '' %>
   <%= f.label :source %><br />
-  <%= f.text_area :source, :class => "tinymce", :rows => 10, :cols => 30 %><br />
+  <%= f.text_area :source, :class => "tinymce", :rows => 2, :cols => 30 %><br />
+  <%= tinymce :forced_root_block => '' %>
   <%= f.check_box :_destroy %>
   <%= f.label :_destroy, "Remove praise?", class: 'remove' %>
   <br/>
   <hr/>
   <br/>
 </fieldset>
+<script type="text/javascript">
+  tinyMCE.init({
+    selector: '.tinymce'
+  });
+</script>
