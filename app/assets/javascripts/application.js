@@ -72,41 +72,6 @@ function getById(id) {
 }
 
 $(document).ready(function(){
-  getById('mobile-button').listen('click', toggleMenu);
-  
-  var mobileNav = document.getElementsByClassName('mobile-nav')[0];
-  var mobileMenu = document.getElementById('mobile-menu');
-  var currentPage = $('#mobile-current').text();
-  
-  function toggleMenu() {
-    if (mobileNav.style.display == 'none') {
-      mobileNav.style.display = 'block';
-      mobileMenu.style.paddingBottom = '7%';
-      $('#mobile-current').text('CLOSE MENU');
-    } else {
-      mobileNav.style.display = 'none';
-      mobileMenu.style.paddingBottom = '10%';
-      $('#mobile-current').text(currentPage);
-    }
-  }
-  
-  getById('contact').listen('click', showContact);
-
-  function showContact() {
-    var darken = document.getElementsByClassName('darken')[0];
-    darken.style.display = 'block';
-    var contact = document.getElementsByClassName('contact')[0];
-    contact.style.display = 'block';
-  }
-
-  getById('x--icon').listen('click', hideContact);
-
-  function hideContact() {
-    var darken = document.getElementsByClassName('darken')[0];
-    darken.style.display = 'none';
-    var contact = document.getElementsByClassName('contact')[0];
-    contact.style.display = 'none';
-  }
 
   function responsiveElements() {
       var windowWidth = window.innerWidth;
