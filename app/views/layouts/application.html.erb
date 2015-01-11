@@ -189,6 +189,24 @@
         $('#mobile-current').text(currentPage);
       }
     }
+    
+    getById('contact').listen('click', showContact);
+
+    function showContact() {
+      var darken = document.getElementsByClassName('darken')[0];
+      darken.style.display = 'block';
+      var contact = document.getElementsByClassName('contact')[0];
+      contact.style.display = 'block';
+    }
+
+    getById('x--icon').listen('click', hideContact);
+
+    function hideContact() {
+      var darken = document.getElementsByClassName('darken')[0];
+      darken.style.display = 'none';
+      var contact = document.getElementsByClassName('contact')[0];
+      contact.style.display = 'none';
+    }
 </script>
 <script type="text/javascript">
     if(Modernizr.mq('(min-width: 584px)')) {

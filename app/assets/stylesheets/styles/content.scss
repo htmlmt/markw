@@ -12,6 +12,30 @@
     padding-top: 0;
   }
   
+  #x--icon {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    width: 7%;
+    cursor: pointer;
+  }
+  
+  .contact {
+    padding: 7%;
+    background: $siteDarkBlue;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    top: 34%;
+    font-size: calc(22rem/16);
+    line-height: 1em;
+    border-top: .5em solid white;
+    border-bottom: .5em solid white;
+  }
+  
   .book {
     margin-bottom: 10%;
   }
@@ -158,6 +182,19 @@
     font-size: calc(18rem/16);
   }
   
+  .contact {
+    padding: 5%;
+    display: none;
+    background: $siteDarkBlue;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 55%;
+    top: 30%;
+  }
+  
   .column p span {
     font-size: calc(15rem/16);
   }
@@ -180,6 +217,14 @@
   
   .event {
     margin: 10% 0;
+  }
+
+  #x--icon {
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    width: 4%;
+    cursor: pointer;
   }
   
   .interview {
@@ -266,7 +311,6 @@ hr {
   padding: 0;
   height: 1px;
   border: 0;
-  background-color: #cccccc;
 }
 
 .summary {
@@ -326,27 +370,6 @@ hr {
 
 .column p span {
   font-weight: bold;
-}
-
-.contact {
-  padding: 5%;
-  display: none;
-  background: $siteDarkBlue;
-  position: fixed;
-  z-index: 200;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 55%;
-  top: 30%;
-}
-
-#x--icon {
-  position: absolute;
-  top: 10%;
-  right: 4%;
-  width: 4%;
-  cursor: pointer;
 }
 
 .darken {

@@ -72,9 +72,7 @@ function getById(id) {
 }
 
 $(document).ready(function(){
-  setTimeout(function(){
-    getById('mobile-button').listen('click', toggleMenu);
-  }, 100)
+  getById('mobile-button').listen('click', toggleMenu);
   
   var mobileNav = document.getElementsByClassName('mobile-nav')[0];
   var mobileMenu = document.getElementById('mobile-menu');
