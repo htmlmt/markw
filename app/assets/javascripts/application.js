@@ -72,12 +72,13 @@ function getById(id) {
 }
 
 $(document).ready(function(){
-  getById('mobile-button').listen('click', toggleMenu);
+  setTimeout(function(){
+    getById('mobile-button').listen('click', toggleMenu);
+  }, 100)
   
   var mobileNav = document.getElementsByClassName('mobile-nav')[0];
   var mobileMenu = document.getElementById('mobile-menu');
   var currentPage = $('#mobile-current').text();
-  console.log(currentPage)
   
   function toggleMenu() {
     if (mobileNav.style.display == 'none') {
