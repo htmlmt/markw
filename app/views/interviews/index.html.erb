@@ -3,7 +3,7 @@
         <% @interviews.each do |interview| %>
         <div class="interview">
             <h2><%= interview.title %></h2>
-            <p><%= interview.snippet %></p>
+            <p><%= interview.snippet.html_safe %></p>
             <a href="<%= interview.link %>" target="_blank">
                 <% if interview.listen == true %>
                     <p><span>LISTEN HERE</span></p>

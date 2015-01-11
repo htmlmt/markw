@@ -17,14 +17,15 @@
   </div>
   <div class="field">
     <%= f.label :snippet %><br>
-    <%= f.text_field :snippet %>
+    <%= f.text_area :snippet, :class => "tinymce", :rows => 10, :cols => 30 %>
+    <%= tinymce :forced_root_block => '' %>
   </div>
   <div class="field">
     <%= f.label :link %><br>
     <%= f.text_field :link %>
   </div>
   <div class="field">
-    <%= f.label :listen %><br>
+    <%= f.label "Listenable?" %><br>
     <%= f.check_box :listen %>
   </div>
   <div class="actions">
