@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150110223004) do
+ActiveRecord::Schema.define(version: 20150111074146) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150110223004) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "link"
+    t.text     "front_page_summary"
   end
 
   create_table "events", force: true do |t|
@@ -70,6 +71,7 @@ ActiveRecord::Schema.define(version: 20150110223004) do
     t.string   "source"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "featured"
   end
 
   create_table "users", force: true do |t|

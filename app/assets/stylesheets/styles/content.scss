@@ -249,9 +249,9 @@
   }
 }
 
-.body--main, .body--main--show {
+.body--main, .home--top, .home--bottom, .upcoming-events, .previous-events, .bio--text, .interviews--container {
   background: $siteDarkBlue;
-  margin-top: -3%;
+  @include transform-translate(0, -2em);
   padding-top: 2em;
   @include clearfix();
   position: relative;
@@ -481,7 +481,7 @@ hr {
 .diagonal {
   height: 0;
   padding-bottom: 5%;
-  margin-top: -3%;
+  margin-top: -6em;
   z-index: 10;
   position: relative;
   background: white;

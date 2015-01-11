@@ -70,6 +70,6 @@ class PraisesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def praise_params
-      params.require(:praise).permit(:book_id, :quotation, :source)
+      params.require(:praise).permit(:book_id, :quotation, :source, :featured)
     end
 end

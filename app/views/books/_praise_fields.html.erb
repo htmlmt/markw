@@ -8,6 +8,8 @@
   <%= f.label :source %><br />
   <%= f.text_area :source, :class => "tinymce", :rows => 2, :cols => 30 %><br />
   <%= tinymce :forced_root_block => '' %>
+  <%= f.check_box :featured %>
+  <%= f.label "Featured on homepage?" %><br>
   <%= f.check_box :_destroy %>
   <%= f.label :_destroy, "Remove praise?", class: 'remove' %>
   <br/>

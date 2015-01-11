@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    # @book = Book.where(featured: true)
+    @book = Book.where(featured: true).first
   end
 end

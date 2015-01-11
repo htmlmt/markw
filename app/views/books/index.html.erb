@@ -2,6 +2,7 @@
   <main class="body--main">
       <section class="home--top">
           <div class="column">
+              <a name="<%= book.title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '') %>"></a>
               <header class="column--header">
                   <h2><em><%= book.title %></em></h2>
                   <% if current_user %>

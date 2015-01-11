@@ -26,11 +26,16 @@
     <%= tinymce :forced_root_block => '' %>
   </div>
   <div class="field">
+    <%= f.label :front_page_summary %><br>
+    <%= f.text_area :front_page_summary, :class => "tinymce", :rows => 10, :cols => 30 %>
+    <%= tinymce :forced_root_block => '' %>
+  </div>
+  <div class="field">
     <%= f.label :link %><br>
     <%= f.text_field :link %>
   </div>
   <div class="field">
-    <%= f.label :featured %><br>
+    <%= f.label "Featured on homepage?" %><br>
     <%= f.check_box :featured %>
   </div>
   <%= f.fields_for :praises do |builder| %>
