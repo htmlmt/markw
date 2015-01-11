@@ -36,9 +36,9 @@
         <div class="past-events-container">
             <% @previous_events.each do |event| %>
             <div class="events-column-third">
-                <section class="event-container hvr-underline-reveal">
+                <section class="event-container">
                     <a href="<%= event.link %>" target="_blank">
-                        <div class="event">
+                        <div class="event hvr-underline-reveal">
                             <hr>
                             <%= event.date.strftime("%B %d, %Y, %l %P") %>
                             <hr>
