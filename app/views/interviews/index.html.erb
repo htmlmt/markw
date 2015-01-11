@@ -11,6 +11,9 @@
                     <p><span>READ MORE</span></p>
                 <% end %>
             </a>
+            <% if current_user %>
+            <%= link_to 'edit this intervew', edit_interview_path(interview) %>
+            <% end %>
         </div>
         <% end %>
     </div>
