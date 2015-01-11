@@ -1,6 +1,15 @@
 @media only screen and (max-width: $smallTabletBreakpoint) {
-  .column--text--wide {
-    
+  .events-column {
+    width: 100%;
+  }
+  
+  .event h2 {
+    font-size: calc(36rem/16);
+    padding-bottom: 4%;
+  }
+  
+  .event {
+    font-size: calc(28rem/16);
   }
   
   .column--header {
@@ -10,7 +19,7 @@
   
   .column--header h2 {
     margin-bottom: 0;
-    font-size: calc(36rem/16);
+    font-size: calc(38rem/16);
   }
   
   .column p {
@@ -42,7 +51,7 @@
     text-align: center;
   }
   
-  .events-column {
+  .events-column-third {
     width: 100%;
   }
 }
@@ -93,6 +102,14 @@
   .events-column {
     width: 50%;
   }
+  
+  .past-events-container {
+    width: 90%;
+  }
+  
+  .events-column-third {
+    width: calc(100%/3 - 2.5em);
+  }
 }
 
 .body--main, .body--main--show {
@@ -142,7 +159,6 @@
 .past-events-container {
   max-width: 900px;
   margin: 0 auto;
-  width: 90%;
 	@include flexbox();
 	@include flexbox-justify-content(space-between);
 	@include flexbox-align-items(stretch);
@@ -151,10 +167,6 @@
 
 .past-events-container .event {
   color: #bbbbbb;
-}
-
-.events-column-third {
-  width: calc(100%/3 - 2.5em);
 }
 
 .event {
