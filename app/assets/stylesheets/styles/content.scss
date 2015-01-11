@@ -3,6 +3,14 @@
     width: 100%;
   }
   
+  .events-column .column--text {
+    padding: 0 0;
+  }
+  
+  .column--text {
+    padding: 0;
+  }
+  
   .event h2 {
     font-size: calc(36rem/16);
     padding-bottom: 4%;
@@ -10,6 +18,7 @@
   
   .event {
     font-size: calc(28rem/16);
+    margin: 4% 0;
   }
   
   .column--header {
@@ -81,6 +90,10 @@
   .column {
     padding-top: 7.5%;
   }
+
+  .column--text {
+    padding: 0 10.5%;
+  }
   
   .column--header h2, .column--text h2 {
     margin-bottom: 2%;
@@ -109,6 +122,10 @@
   
   .events-column-third {
     width: calc(100%/3 - 2.5em);
+  }
+  
+  .event {
+    margin: 10% 0;
   }
 }
 
@@ -172,7 +189,6 @@
 .event {
   background: $siteDarkestBlue;
   padding: 5%;
-  margin: 10% 0;
 }
 
 hr {
@@ -257,10 +273,6 @@ hr {
 
 .column p span {
   font-weight: bold;
-}
-
-.column--text {
-  padding: 0 10.5%;
 }
 
 .contact {
