@@ -9,11 +9,7 @@
   
   .column--text {
     padding: 7.5%;
-  }
-  
-  .home--top {
-    display:flex;
-    flex-direction: column-reverse;
+    padding-top: 0;
   }
   
   .book {
@@ -38,6 +34,11 @@
   .column--header h2 {
     margin-bottom: 0;
     font-size: calc(38rem/16);
+  }
+  
+  .column--text h2 {
+    font-size: calc(46rem/16);
+    text-align: center;
   }
   
   .column p {
@@ -98,6 +99,14 @@
   .column--text--wide {
     padding: 0 7.5%;
   }
+
+  .bio--text {
+    padding: 7.5%;
+  }
+  
+  .books--nav, .books--diagonal {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: $smallTabletBreakpoint) {
@@ -105,6 +114,10 @@
     float: right;
     width: 55%;
     padding: 0 0 3% 6%;
+  }
+
+  .bio--text {
+    padding: 7.5% 10.5% 7.5% 5.5%;
   }
   
   .events--header {
@@ -179,6 +192,10 @@
   
   .interview h2 {
     font-size: calc(26rem/16);
+  }
+
+  .column .books--top {
+    padding-top: 27%;
   }
 }
 
@@ -259,10 +276,6 @@ hr {
   margin-top: 7%;
 }
 
-.column .books--top {
-  padding-top: 27%;
-}
-
 .column--header h2, .column--text h2 {
   font-family: 'Oswald Light';
   color: $siteLightBlue;
@@ -287,10 +300,6 @@ hr {
 
 .interviews--container {
   padding: 10.5% 5.5%;
-}
-
-.bio--text {
-  padding: 7.5% 10.5% 7.5% 5.5%;
 }
 
 .events-column .column--text a {
