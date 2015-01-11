@@ -22,7 +22,7 @@
                       </div>
                       <% if book.summary.present? %>
                       <div class="summary">
-                          <%= simple_format(book.summary) %>
+                          <%= book.summary.html_safe %>
                       </div>
                       <% end %>
                   </div>
@@ -31,7 +31,7 @@
           <div class="column">
               <div class="books--top column--text">
                 <h2>PRAISE</h2>
-                <% @praises = book.praises.order('created_at DESC')%>
+                <% @praises = book.praises.order('created_at ASC')%>
                 <% @praises.each do |praise| %>
                 <p><%= praise.quotation.html_safe %><br/>
                 <span>–<%= praise.source.html_safe %></span></p>
