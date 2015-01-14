@@ -505,3 +505,15 @@ hr {
     float: left;
   }
 }
+
+.hidden_field {
+  display: none;
+}
+
+.remove_fields {
+  cursor: pointer;
+}
+
+.remove_fields:hover {
+  text-decoration: underline;
+}
